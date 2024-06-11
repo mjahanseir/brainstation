@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Challenge 2: Pseudocode</title>
+    <style>
+        .code {
+            width: 50%;
+            font-size: 1rem;
+            margin: 2rem;
+            background-color: lightblue;
+        }
+
+        .solution {
+            font-size: 1.5rem;
+            padding: 2rem;
+            color: white;
+            background-color: dodgerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Challenge 2: Pseudocode</h1>
+    <p>The intended functionality of the program below is to take a list of more than 1000 numbers (not in sequence) and
+        determine the biggest number in the list. Identify any error(s) within this pseudocode solution and provide an
+        explanation on why you identified this as a potential problem.</p>
+    <pre class="code">
+1.    Let maxNumber represent the biggest number, set it to zero to start
+2.    While there are still numbers left in the list
+3.        Look at the next number in the list
+4.        Compare it to the maxNumber
+5.            If next number is smaller than maxNumber
+6.                Set maxNumber to that number
+7.    Report maxNumber as the biggest in the list
+    </pre>
+    <p class="solution"> In line 5(If next number is smaller than maxNumber), it's crucial to clarify that the condition
+        should verify whether the next number is "bigger" than maxNumber, not smaller. This distinction is vital because
+        our goal is to pinpoint the largest number, updating maxNumber only when encountering a number greater than the
+        current maximum. <br>
+        <mark>If next number is <em> bigger </em> than maxNumber </mark>
+    </p>
+</body>
+
+</html>

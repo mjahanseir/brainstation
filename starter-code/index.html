@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&family=Overpass:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>F + F Watch</title>
+    <style>
+        /* add your styles below: */
+        .header__copy--upperbold {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .details {
+            padding: 0 5%;
+            background: #f2e1ee;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+
+        .details h3 {
+            margin-left: 5%;
+        }
+
+        .details-center {
+            text-align: center;
+        }
+
+        .details_title {
+            font-family: "Chivo", Arial, Helvetica, sans-serif;
+            font-size: 32px;
+            margin: 0 0 30px;
+        }
+
+        .details_container {
+            padding: 0 5%;
+            display: flex;
+            justify-content: space-between;
+            background: white;
+        }
+
+        .details_container h4 {
+            font-size: 26px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        .details_container p {
+            font-size: 19px;
+            margin: 0;
+            margin-bottom: 20px;
+            color: gray;
+        }
+
+        .details_column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .pricing__card-top {
+            border-bottom: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul class="nav__pages-list">
+            <li class="nav__pages-list-item">
+                <a class="nav__pages-link" href="/">HOME</a>
+            </li>
+            <!-- <li class="nav__pages-list-item">
+                <a class="nav__pages-link" href="/">CONTACT</a>
+            </li> -->
+        </ul>
+        <a class="nav__logo" href="#">
+            <img class="nav__logo-img" src="../F+F-logo-black.svg" alt="F+F Main Logo / Home Link">
+        </a>
+        <!-- ------------------------------------------------------------------------------------------------
+            4- The client would like to have the 'features' link in the top navigation bar to be highlighted always. 
+                Add the class nav__sections-link--highlight in order to have this applied.
+            -------------------------------------------------------------------------------------------------- -->
+        <ul class="nav__sections-list">
+            <li class="nav__sections-list-item">
+                <a class="nav__sections-link nav__sections-link--highlight" href="#features">FEATURES</a>
+            </li>
+            <li class="nav__sections-list-item">
+                <a class="nav__sections-link" href="#pricing">PRICES</a>
+            </li>
+        </ul>
+    </div>
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__title">Form Over Function?</h1>
+            <h2 class="header__subtitle">Why Choose?</h2>
+            <p class="header__copy">
+                At <span class="header__copy--bold">F+F</span> we believe that you shouldn’t have to pick between a
+                stunning product and one that works. <span class="header__copy--bold">No compromises.</span> Just an
+                outstanding wrist watch, built to last.</p>
+            <!-- ------------------------------------------------------------------------------------------------
+            5- Add two taglines to follow the header copy:
+                - Minimal, yet sharp
+                - Modern, yet timeless
+                -The last word of each tagline should be lowercase in your HTML file, but you should use CSS to modify
+                 the text to use uppercase casing. (ie. SHARP, TIMELESS) The last word should also be bolded, while 
+                 the rest of the tagline can use a normal weight.
+                -You should identify and create the right tags yourself and not use ones that exist in the HTML already. 
+                These taglines should each be within their own HTML tag.
+            -------------------------------------------------------------------------------------------------- -->
+            <p class="header__copy">
+                Minimal, yet <span class="header__copy--upperbold">sharp</span>
+                <br>
+                Modern, yet <span class="header__copy--upperbold">timeless</span>
+            </p>
+            <!-- OR    <p>Minimal, yet <span class="header__copy--uppercase header__copy--bold">sharp</span></p>
+                        <p>Modern, yet <span class="header__copy--uppercase header__copy--bold">timeless</span></p>  -->
+        </div>
+    </header>
+    <main>
+        <div id="features" class="features">
+            <div class="features__container">
+                <div class="features__column">
+                    <h3 class="features__title">Features:</h3>
+                    <ul class="features__list">
+                        <li class="features__list-item">
+                            A Massive 1.5 Inch Touch Screen
+                        </li>
+                        <li class="features__list-item">
+                            A Range of Watch Face Backgrounds to Choose From
+                        </li>
+                        <li class="features__list-item">
+                            Water Resistant up to 7 Feet
+                        </li>
+                        <li class="features__list-item">
+                            Step Tracking, Heart Rate & Sleep Monitoring
+                        </li>
+                        <li class="features__list-item">
+                            Step Tracking, Heart Rate & Sleep Monitoring
+                        </li>
+                        <!-- ------------------------------------------------------------------------------------------------
+                        1- Since starting the site, the client has 2 more features they'd like to add to the features section. 
+                            They should be added to the end of the existing list as new list items.
+                            Notifications from Popular Apps
+                            10 Days of Battery Life
+                        -------------------------------------------------------------------------------------------------- -->
+                        <li class="features__list-item">
+                            Notifications from Popular Apps
+                        </li>
+                        <li class="features__list-item">
+                            10 Days of Battery Life
+                        </li>
+                    </ul>
+                </div>
+                <!-- ------------------------------------------------------------------------------------------------
+                2- An image has been provided for the right side of the features section. 
+                    You'll see there's an image tag there already in the HTML (has a class of features__image), 
+                    but the source attribute is empty. Please link the correct image here.
+                -------------------------------------------------------------------------------------------------- -->
+                <div class="features__column">
+                    <img class="features__image" src="../watch-side.png" alt="Side view of F+F Watch">
+                </div>
+            </div>
+        </div>
+        <!-- ------------------------------------------------------------------------------------------------
+           Part 2- The client has requested that a new section of the website be built between the "Features" and the "Pricing" sections. This new section will be a more comprehensive breakdown of the features mentioned. You can find the content below. There is no mockup provided for this section. With your knowledge of HTML (don't forget about semantics!), build this to the best of your ability. Then use your knowledge of CSS to style the section.
+                A Massive 1.5 Inch Touch Screen
+                Size is what matters when it comes to a smart watch screen. Read all your notifications with plenty of space.
+                Mix and Match Designs
+                Personalize your watch face to match your own unique style with many combinations of background images, clock styles and colors.
+                Water Resistant up to 7 Feet
+                IP68 Weatherproof rating. Fit to withstand dust, dirt and sand and resistant to submersion up to a maximum depth of 7 feet underwater for up to 30 minutes.
+                Tracking your Steps, Heart Rate & Sleep.
+                Check out your step progress during the day with the in app-tracker. Keep an eye on your heart rate easily and conveniently. And when you’re ready for your head to hit the pillow, track that too. 
+                Notifications from Popular Apps
+                Get all your notifications from all your accounts conveniently on your wrist
+                Up to 10 Days of Battery Life
+                With a battery capacity up to 300mAh, you’ll have no problem getting through the week with plenty of charge to spare. 
+                Furthermore, you may go beyond the basic requirements above to showcase your current HTML and CSS skills, including any skills not covered in the Admissions Challenge such as Flexbox or CSS animations.how
+                -------------------------------------------------------------------------------------------------- -->
+        <div class="details">
+            <h3 class="details_title">Details:</h3>
+            <div class="details_container ">
+                <div class="details_column details-center">
+                    <h4> A Massive 1.5 Inch Touch Screen</h4>
+                    <p>Size is what matters when it comes to a smart watch screen. Read all your notifications with
+                        plenty of space.
+                    <h4> Mix and Match Designs</h4>
+                    <p>
+                        Personalize your watch face to match your own unique style with many combinations of background
+                        images, clock styles and colors.
+                    </p>
+                    <h4>Water Resistant up to 7 Feet</h4>
+                    <p>
+                        IP68 Weatherproof rating. Fit to withstand dust, dirt and sand and resistant to submersion up to
+                        a maximum depth of 7 feet underwater for up to 30 minutes.
+                    </p>
+                </div>
+                <div class="details_column details-center">
+                    <h4>Tracking your Steps, Heart Rate & Sleep.</h4>
+                    <p>
+                        Check out your step progress during the day with the in app-tracker. Keep an eye on your heart
+                        rate easily and conveniently. And when you’re ready for your head to hit the pillow, track that
+                        too.
+                    </p>
+                    <h4> Notifications from Popular Apps</h4>
+                    <p>
+                        Get all your notifications from all your accounts conveniently on your wrist
+                    </p>
+                    <h4>Up to 10 Days of Battery Life</h4>
+                    <p>
+                        With a battery capacity up to 300mAh, you’ll have no problem getting through the week with
+                        plenty of charge to spare.
+                    </p>
+                    <p>
+                        Furthermore, you may go beyond the basic requirements above to showcase your current HTML and
+                        CSS skills, including any skills not covered in the Admissions Challenge such as Flexbox or CSS
+                        animations.how
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div id="pricing" class="pricing">
+            <div class="pricing__container">
+                <h3 class="pricing__title">Pricing:</h3>
+                <div class="pricing__cards">
+                    <div class="pricing__card">
+                        <div class="pricing__card-top">
+                            <h4 class="pricing__card-title">Package 1:</h4>
+                            <p class="pricing__card-price">$89</p>
+                        </div>
+                        <div class="pricing__card-bottom">
+                            <!-- ------------------------------------------------------------------------------------------------
+                            6-  The client would like to include a breakdown of what is included in each pricing package. 
+                                They're provided the following information:
+                                - The copy should be added to the pricing__card-bottom section, and the information should be in the order provided. 
+                                Use your knowledge of semantic HTML to build out this section.
+                                - Use the copy provided:
+                                        - Package 1 includes: Watch face, Interchangeable band (white), Charging cable
+                                        - Package 2 includes: Everything in Package 1, Interchangeable band (black)
+                                        - Package 3 includes: Everything in Package 2, Extra charging cable, Warranty for 5 years
+                                - Add a 2px solid black dividing line between the pricing__card-top & pricing__card-bottom sections by using the 
+                                appropriate box model property.
+                            -------------------------------------------------------------------------------------------------- -->
+                            <section>
+                                <p>Package included:</p>
+                                <ol>
+                                    <li>Watch face</li>
+                                    <li>Interchangeable band (white)</li>
+                                    <li>Charging cable</li>
+                                </ol>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="pricing__card">
+                        <div class="pricing__card-top">
+                            <h4 class="pricing__card-title">Package 2:</h4>
+                            <p class="pricing__card-price">$99</p>
+                        </div>
+                        <div class="pricing__card-bottom">
+                            <section>
+                                <p>Package included:</p>
+                                <ol>
+                                    <li>Everything in Package 1 </li>
+                                    <li>Interchangeable band (black)</li>
+                                </ol>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="pricing__card">
+                        <div class="pricing__card-top">
+                            <h4 class="pricing__card-title">Package 3:</h4>
+                            <p class="pricing__card-price">$109</p>
+                        </div>
+                        <div class="pricing__card-bottom">
+                            <section>
+                                <p>Package included:</p>
+                                <ol>
+                                    <li>Everything in Package 2 </li>
+                                    <li>Extra charging cable</li>
+                                    <li>Warranty for 5 years</li>
+                                </ol>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <nav class="nav-footer">
+            <!-- ------------------------------------------------------------------------------------------------
+                3- There are two paragraph elements in the footer, one for the email and one for the phone number. 
+                    Change these elements to use anchor tags instead of paragraph tags. Keep the same class name, 
+                    as this will keep the proper styling applied.
+                        For the email:
+                            Use info@ff.com as the content
+                            Use mailto:info@ff.com as the hyperlink reference
+                        For the phone number:
+                            Use 867 - 102 - 4337 as the content
+                            Use tel:8671024337 as the hyperlink reference
+                -------------------------------------------------------------------------------------------------- -->
+            <ul class="nav-footer__list">
+                <li class="nav-footer__list-item">
+                    <p class="nav-footer__link"><a href="mailto:info@ff.com">INFO@FF.COM</a></p>
+                </li>
+                <li class="nav-footer__list-item">
+                    <a class="nav-footer__link" href="./index.html">
+                        <img class="nav-footer__logo" src="../F+F-logo-black.svg" alt="F+F Logo / Link to Home">
+                    </a>
+                </li>
+                <li class="nav-footer__list-item">
+                    <p class="nav-footer__link"> <a href="tel:8671024337"> 867 - 102 - 4337</a></p>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
